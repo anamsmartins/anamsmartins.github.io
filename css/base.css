@@ -7,8 +7,29 @@ body, html{
 }
 
 div{
-    font-size: 24px;
+    font-size: 20px;
     font-family: 'Courier New', Courier, monospace;
     margin: auto;
     text-decoration: underline;
 }
+
+.construction-div{
+    cursor: pointer;
+}
+
+@keyframes increaseDecrease {
+    0% {
+      font-size: 20px;
+    }
+    50% {
+      font-size: 32px;
+    }
+    100% {
+      font-size: 20px;
+    }
+  }
+
+  .animate-font-size {
+    animation: increaseDecrease 2s infinite;
+  }
+
