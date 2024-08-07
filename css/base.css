@@ -3,33 +3,109 @@ body, html{
     width: 100%;
     display: flex;
     flex-direction: column;
-    background-color: antiquewhite;
+    background: url("../assets/images/scenario.png") no-repeat center center;
+    background-size: cover;
+    margin: 0;
 }
 
-div{
-    font-size: 20px;
-    font-family: 'Courier New', Courier, monospace;
-    margin: auto;
-    text-decoration: underline;
+.row{
+  display: flex;
+  flex-direction: row;
 }
 
-.construction-div{
-    cursor: pointer;
+.column{
+  display: flex;
+  flex-direction: column;
 }
 
-@keyframes increaseDecrease {
-    0% {
-      font-size: 20px;
-    }
-    50% {
-      font-size: 32px;
-    }
-    100% {
-      font-size: 20px;
-    }
+.content-body{
+  height: 100%;
+  display: inherit;
+  align-items: center;
+  gap: 3%;
+}
+
+.puff-div, .center-div, .right-div{
+  width: 30%;
+  height: 100%;
+}
+
+.lamps-div{
+  height: 35%;
+  width: 100%;
+  margin-left: 5%;
+}
+
+.character-div{
+  height: 65%;
+  width: 100%;
+  margin-top: auto;
+}
+
+#character, #character-gif{
+  height: 70%;
+  margin: auto;
+}
+
+#bodyboard, #bodyboard-gif{
+  height: 45%;
+  margin: 0 auto;
+  margin-top: 125%;
+}
+
+#shelf{
+  height: 27%;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 60%;
+  background: url('../assets/images/shelf.png') no-repeat center center;
+}
+
+.shelf-row{
+  display: flex;
+  flex-direction: row;
+  height: 30%;
+  width: 75%;
+  gap: 10%;
+}
+
+.shelf-lower-row-item{
+  width: 25%;
+  display: flex;
+  justify-content: center;
+}
+
+.orb{
+  height: 95%;
+  cursor: pointer;
+}
+
+.character-div, .bodyboard-div, .shelf-div{
+  justify-content: center;
+  display: flex;
+  /* margin-top: auto; */
+}
+
+.bodyboard-div{
+  height: 100%;
+}
+
+.shelf-div{
+  width: 60%;
+}
+
+.bodyboard-div{
+  width: 40%;
+}
+
+#lamps{
+  height: 90%;
+  margin-left: 50%;
+  display: flex;
+}
+
+@media only screen and (max-height: 600px) {
+  #lamps{
+    display: none;
   }
-
-  .animate-font-size {
-    animation: increaseDecrease 2s infinite;
-  }
-
+}
