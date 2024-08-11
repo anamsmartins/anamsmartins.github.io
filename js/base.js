@@ -3,15 +3,14 @@ const bodyboard = document.getElementById('bodyboard');
 const lamps = document.getElementById('lamps');
 const githubOrb = document.getElementById('github-orb');
 const linkedinOrb = document.getElementById('linkedin-orb');
+const gmailOrb = document.getElementById('gmail-orb');
+const radio = document.getElementById('radio');
 
 var bodyboardWav = new Audio('../assets/sounds/bodyboard.wav');
 
 var userWantsSound = false;
-document.addEventListener('click', function(event) {
-    userWantsSound = !userWantsSound
-  });
 
-// --- Character GIF control
+// --- Character control
 function switchGifs() {
     // Reset GIF
     character.src = '../assets/images/character_idle_1.png';
@@ -28,7 +27,7 @@ function switchGifs() {
 }
 switchGifs();
 
-// --- Bodyboard GIF control
+// --- Bodyboard control
 let bodyboardInteractionTimeout;
 bodyboard.addEventListener('mouseover', function() {
     // Reset GIF
@@ -57,7 +56,7 @@ bodyboard.addEventListener('mouseover', function() {
 });
 
 
-// --- Lamps GIF control
+// --- Lamps control
 let lampsInteractionTimeout;
 lamps.addEventListener('mouseover', function() {
     // Reset GIF
@@ -71,6 +70,25 @@ lamps.addEventListener('mouseover', function() {
     lampsInteractionTimeout = setTimeout(() => {
         lamps.src = '../assets/images/lamps.png';
     }, 1000); 
+});
+
+// --- Radio control
+let radioInteractionTimeout;
+radio.addEventListener('mouseover', function() {
+    // Reset GIF
+    radio.src = '../assets/images/radio.png';
+    radio.src = '../assets/gifs/radio_interact.gif';
+
+    // Clear any previous timeouts
+    clearTimeout(radioInteractionTimeout);
+
+    // Set new timeout to wait for end of GIF
+    radioInteractionTimeout = setTimeout(() => {
+        radio.src = '../assets/images/radio.png';
+    }, 1000); 
+});
+radio.addEventListener('click', function() {
+    userWantsSound = !userWantsSound;
 });
 
 
@@ -110,4 +128,29 @@ linkedinOrb.addEventListener('mouseover', function() {
 });  
 linkedinOrb.addEventListener('click', function(){
     window.open('https://www.linkedin.com/in/ana-ms-martins/', '_blank');
+});
+
+// --- Gmail Orb control
+let gmailOrbInteractionTimeout;
+gmailOrb.addEventListener('mouseover', function() {
+    // Reset GIF
+    gmailOrb.src = '../assets/images/gmail-orb.png';
+    gmailOrb.src = '../assets/gifs/gmail-orb-interact.gif';
+
+    // Clear any previous timeouts
+    clearTimeout(gmailOrbInteractionTimeout);
+
+    // Set new timeout to wait for end of GIF
+    gmailOrbInteractionTimeout = setTimeout(() => {
+        gmailOrb.src = '../assets/images/gmail-orb.png';
+    }, 1000); 
+});  
+gmailOrb.addEventListener('click', function(){
+    var mailWindow = window.open('mailto:anaritamsmartins@gmail.com');
+
+    // If a new window was created (not blocked), close it immediately
+    if (mailWindow) {
+        mailWindow.close();
+    }
+    
 });

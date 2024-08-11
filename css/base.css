@@ -54,17 +54,16 @@ body, html{
 }
 
 #shelf{
-  height: 27%;
+  height: 40%;
   width: 100%;
   margin: 0 auto;
-  margin-top: 60%;
+  margin-top: 40%;
   background: url('../assets/images/shelf.png') no-repeat center center;
 }
 
 .shelf-row{
   display: flex;
   flex-direction: row;
-  height: 30%;
   width: 75%;
   gap: 10%;
 }
@@ -73,10 +72,23 @@ body, html{
   width: 25%;
   display: flex;
   justify-content: center;
+  height: 100%;
+}
+
+.shelf-higher-row-item{
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
 
 .orb{
-  height: 95%;
+  height: 80%;
+  cursor: pointer;
+  margin-top: auto;
+  margin-bottom: 10%;
+}
+
+#radio{
   cursor: pointer;
 }
 
