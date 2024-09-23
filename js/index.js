@@ -1,10 +1,15 @@
-const character = document.getElementById("character")
+const character = document.getElementById("character");
 const bodyboard = document.getElementById('bodyboard');
 const lamps = document.getElementById('lamps');
 const githubOrb = document.getElementById('github-orb');
 const linkedinOrb = document.getElementById('linkedin-orb');
 const gmailOrb = document.getElementById('gmail-orb');
 const radio = document.getElementById('radio');
+const computer = document.getElementById('computer');
+
+const screenFill = document.getElementById("screenFill");
+const baseContent = document.getElementById("base-content");
+// const workContent = document.getElementById("work-content");
 
 var bodyboardWav = new Audio('../assets/sounds/bodyboard.wav');
 
@@ -154,3 +159,41 @@ gmailOrb.addEventListener('click', function(){
     }
     
 });
+
+// Computer control
+let computerInteractionTimeout;
+computer.addEventListener('mouseover', function() {
+    // Reset GIF
+    computer.src = '../assets/images/computer.png';
+    computer.src = '../assets/gifs/computer-interact.gif';
+
+    // Clear any previous timeouts
+    clearTimeout(computerInteractionTimeout);
+
+    // Set new timeout to wait for end of GIF
+    computerInteractionTimeout = setTimeout(() => {
+        computer.src = '../assets/images/computer-open.png';
+    }, 1000); 
+});
+
+computer.addEventListener('mouseout', function() {
+    // Reset GIF
+    computer.src = '../assets/images/computer.png';
+});
+computer.addEventListener('click', function () {
+    // Show overlay with animation
+    screenFill.classList.add("active");
+
+    // Simulate loading new content with a delay (e.g., fetching data)
+    setTimeout(function () {
+        // Re-hide the overlay after the new content is ready
+        screenFill.classList.remove("active");
+        window.location.href = '/work';
+    }, 2000); // Simulate 1 second loading delay
+
+    setTimeout(function () {
+        // Replace current content with new content
+        baseContent.style.display = 'none';
+        // workContent.style.display = 'flex';
+    }, 500);
+})

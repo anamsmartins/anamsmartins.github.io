@@ -1,0 +1,60 @@
+body, html{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background: url("../assets/images/scenario.png") no-repeat center center;
+    background-size: cover;
+    margin: 0;
+    overflow: hidden;
+}
+
+.content-body{
+    height: 100%;
+    width: 100%;
+    display: inherit;
+    position: fixed;
+    z-index: 0 !important;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+}
+  
+.column{
+    display: flex;
+    flex-direction: column;
+}
+
+/* Animated overlay */
+.screen-fill {
+    position: fixed;
+    bottom: 5%;
+    left: 50%;
+    width: 150px;
+    height: 150px;
+    background-color: #ffb978;
+    border-radius: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    animation: none;
+    z-index: 9999 !important;
+}
+
+/* Animation keyframes */
+@keyframes fillScreen {
+    0% {
+        transform: translate(-50%, -50%) scale(0);
+    }
+    50% {
+        transform: translate(-50%, -50%) scale(20);
+    }
+    100% {
+        transform: translate(-50%, -50%) scale(0);
+    }
+}
+
+/* Active state for the animation */
+.active {
+    animation: fillScreen 2s ease-in-out forwards;
+}

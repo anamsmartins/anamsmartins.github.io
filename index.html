@@ -4,50 +4,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/work.css">
     <title>Yunikyon</title>
 </head>
 
 <body>
-    <div class="content-body row">
-        <div class="puff-div">
-
-        </div>
-        <div class="center-div column">
-            <div class="lamps-div">
-                <img id="lamps" src="assets/images/lamps.png" />
+    <div class="content-body">
+        <div id="base-content" class="base-content-body row">
+            <div class="puff-div">
+                <img id="puff" src="assets/images/puff.png"/>
+                <img id="computer" src="assets/images/computer.png"/>
             </div>
-            <div class="character-div">
-                <img id="character" src="assets/images/character_idle_1.png"/>
+            <div class="center-div column">
+                <div class="lamps-div">
+                    <img id="lamps" src="assets/images/lamps.png" />
+                </div>
+                <div class="character-div">
+                    <img id="character" src="assets/images/character_idle_1.png"/>
+                </div>
             </div>
-        </div>
-        <div class="right-div row">
-            <div class="shelf-div">
-                <div id="shelf" class="column">
-                    <div class="shelf-row" style="margin: 0 auto; margin-top: 5%; height: 35%;">
-                        <div class="shelf-higher-row-item">
-                            <img id="radio" src="assets/images/radio.png">
+            <div class="right-div row">
+                <div class="shelf-div">
+                    <div id="shelf" class="column">
+                        <div class="shelf-row" style="margin: 0 auto; margin-top: 5%; height: 35%;">
+                            <div class="shelf-higher-row-item">
+                                <img id="radio" src="assets/images/radio.png">
+                            </div>
                         </div>
-                    </div>
-                    <div class="shelf-row" style="margin: 0 auto; margin-top: 7%; height: 23%; align-items: baseline;">
-                        <div class="shelf-lower-row-item">
-                            <img id="github-orb" class="orb" src="assets/images/github-orb.png">
-                        </div>
-                        <div class="shelf-lower-row-item">
-                            <img id="linkedin-orb" class="orb" src="assets/images/linkedin-orb.png">
-                        </div>
-                        <div class="shelf-lower-row-item">
-                            <img id="gmail-orb" class="orb" src="assets/images/gmail-orb.png">
+                        <div class="shelf-row" style="margin: 0 auto; margin-top: 7%; height: 23%; align-items: baseline;">
+                            <div class="shelf-lower-row-item">
+                                <img id="github-orb" class="orb" src="assets/images/github-orb.png">
+                            </div>
+                            <div class="shelf-lower-row-item">
+                                <img id="linkedin-orb" class="orb" src="assets/images/linkedin-orb.png">
+                            </div>
+                            <div class="shelf-lower-row-item">
+                                <img id="gmail-orb" class="orb" src="assets/images/gmail-orb.png">
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="bodyboard-div">
-                <img id="bodyboard" src="assets/images/bodyboard.png">
+                <div class="bodyboard-div">
+                    <img id="bodyboard" src="assets/images/bodyboard.png">
+                </div>
             </div>
         </div>
+        <!-- <div id="work-content" class="work-content-body row">
+            WORKKK
+        </div> -->
     </div>
-    <script src="js/base.js"></script>
+     <!-- Overlay for animation -->
+     <div class="screen-fill" id="screenFill"></div>
+    <script src="js/index.js"></script>
 </body>
 
 </html>
