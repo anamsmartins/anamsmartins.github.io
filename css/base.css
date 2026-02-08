@@ -370,6 +370,12 @@ hr {
   transform-origin: center center;
 }
 
+.world-map path:hover {
+  fill: var(--navy-blue);
+  transform: scale(1.01);
+  cursor: pointer;
+}
+
 .world-map path.visited {
   fill: var(--accent-color);
 }
@@ -383,12 +389,6 @@ hr {
   0%   { opacity: 0.6; }
   50%  { opacity: 1; }
   100% { opacity: 0.6; }
-}
-
-.world-map path:hover {
-  fill: var(--navy-blue);
-  transform: scale(1.01);
-  cursor: pointer;
 }
 
 .map-tooltip {
