@@ -5,7 +5,7 @@ const projects = [
   {
     title: "Careline",
     description:
-      "Careline is a remote health service that helps with daily health support, triage processes, and efficient drone delivery of prescribed medications.",
+      "A remote health service that helps with daily health support, triage processes, and efficient drone delivery of prescribed medications.",
     tags: [
       "Fullstack",
       "iOS",
@@ -21,7 +21,7 @@ const projects = [
   {
     title: "HandiTalk",
     description:
-      "HandiTalk is an Android application designed to support the learning of American Sign Language (ASL) through the use of Artificial Intelligence and gesture recognition.",
+      "An Android application designed to support the learning of American Sign Language (ASL) through the use of Artificial Intelligence and gesture recognition.",
     tags: ["AI", "Android", "MediaPipe", "Python", "Roboflow", "ASL"],
     link: "https://github.com/Academcis/cas-handi-talk",
   },
@@ -44,7 +44,7 @@ const projects = [
   {
     title: "Fastuga Cloud",
     description:
-      "Cloud-native adaptation of Fastuga using a microservices architecture deployed with Docker and Kubernetes.",
+      "A cloud-native adaptation of the Fastuga full-stack website using a microservices architecture, deployed with Docker and Kubernetes.",
     tags: ["Web", "Cloud", "Docker", "Kubernets", "Terraform", "Laravel Sail"],
     link: "https://github.com/Academcis/cloud-computing-fastuga",
   },
@@ -82,7 +82,7 @@ const projects = [
   {
     title: "Bloodshot Chaos",
     description:
-      "Bloodshot Chaos is a fast-paced, pixel-art action shooter designed for mobile platforms.",
+      "A fast-paced, pixel-art action shooter designed for mobile platforms.",
     tags: ["Android", "Game", "Unity", "C#"],
     link: "https://github.com/Academcis/bloodshot-caos",
   },
@@ -111,7 +111,7 @@ const projects = [
   {
     title: "Fastuga Driver",
     description:
-      "Mobile app for FasTuga drivers to manage deliveries, track earnings, and optimize routes.",
+      "A mobile app to help FasTuga drivers manage deliveries, track earnings and optimise routes.",
     tags: [
       "Android",
       "Cloud",
@@ -125,7 +125,7 @@ const projects = [
   {
     title: "Somiod",
     description:
-      "Service-oriented middleware enabling interoperable, open-data access across IoT devices and applications.",
+      "A service-oriented middleware that enables open, interoperable data access across IoT devices and applications.",
     tags: ["Fullstack", "Web", ".NET", "MQTT", "C#", "XML"],
     link: "https://github.com/Academcis/somiod-is-ipleiria",
   },
