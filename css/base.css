@@ -38,9 +38,9 @@ hr {
 }
 
 .page-section {
-    padding: 3% 2%;
+    padding: 4% 2%;
     min-height: 100vh;
-    margin-bottom: 5%;
+    margin-bottom: 3%;
 }
 
 /* ==================================== Profile ==================================== */
@@ -61,13 +61,14 @@ hr {
     font-size: 1.2rem;
     color: var(--text-color-light);
     text-decoration: none;
-    border: 1px solid var(--text-color-light);
+    border: 2px solid var(--text-color-light);
     padding: .5% 1%;
+    border-radius: 12px;
 }
 
 .sections-buttons a:hover {
     color: var(--navy-blue);
-    border: 1px solid var(--accent-color);
+    border: 2px solid var(--accent-color);
     background-color: var(--accent-color);
 }
 
@@ -81,11 +82,11 @@ hr {
 
 
 .profile-content img {
-    width: 140px;
-    height: 140px;
+    width: 160px;
+    height: 160px;
     border-radius: 50%;
     object-fit: cover;
-    box-shadow: 0px 4px 12px var(--card-shadow);
+    /* box-shadow: 0px 4px 12px var(--card-shadow); */
     margin: 0 auto;
     margin-bottom: 1%;
 }

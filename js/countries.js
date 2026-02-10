@@ -1,5 +1,5 @@
 const visitedCountries = ["PT"];
-const dreamCountries = ["GR", "HW-1", "IT", "SE", "FR"];
+const dreamCountries = ["GR", "HW-1", "IT", "SE", "FR", "NL"];
 
 fetch("svg/world.svg")
   .then((response) => response.text())
