@@ -1,0 +1,28 @@
+{
+  "academics": [
+    {
+      "degree": "BSc Computer Engineering",
+      "institution": "Polytechnic Institute of Leiria",
+      "period": "2020 - 2023",
+      "grade": 18,
+      "iconUrl": "/assets/book/academic-background-bachelor.png",
+      "description": "General engineering curriculum with a strong focus on computer science and engineering principles."
+    },
+    {
+      "degree": "MSc Computer Engineering",
+      "institution": "Polytechnic Institute of Leiria",
+      "period": "2023 - 2025",
+      "grade": 18,
+      "iconUrl": "/assets/book/academic-background-master.png",
+      "description": "Specialised in mobile computing, with expertise in a variety of current areas, including cloud comptuing and cybersecurity."
+    }
+  ],
+  "honors": [
+    {
+      "title": "Merit Grants (2022)",
+      "institution": "Polytechnic Institute of Leiria",
+      "description": "Awarded to top-performing students (grade >= 16/20)",
+      "url": "https://www.ipleiria.pt/wp-content/uploads/2022/09/Escola-Superior-de-Tecnologia-e-Gestao-de-Leiria.pdf"
+    }
+  ]
+}

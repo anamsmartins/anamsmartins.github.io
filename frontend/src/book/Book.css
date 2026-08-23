@@ -1,0 +1,150 @@
+.book-stage {
+  flex: 1;
+  min-width: 0;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  overflow: hidden;
+}
+
+.book-shell {
+  position: relative;
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.book-wrapper {
+  position: relative;
+  flex: 0 0 auto;
+  overflow: hidden;
+}
+
+/* Portrait single-page: autoSize uses a padding-bottom aspect-ratio trick on the
+   inner wrapper that would otherwise extend the hit target over the marker bar. */
+.book-wrapper--single .stf__parent {
+  height: 100% !important;
+  max-height: 100%;
+}
+
+.book-wrapper--single .stf__wrapper {
+  height: 100% !important;
+  padding-bottom: 0 !important;
+}
+
+.book-shell--map-open .flipbook {
+  pointer-events: none;
+}
+
+.book-wrapper--flip-cursor,
+.book-wrapper--flip-cursor .flipbook,
+.book-wrapper--flip-cursor .flipbook * {
+  cursor: pointer;
+}
+
+.book-wrapper--status {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f0e6d2;
+  border: 1px solid #d9cdb3;
+  border-radius: 4px;
+  color: #7a6f5c;
+  font-family: var(--font-book-text);
+  font-size: 1.1rem;
+  text-align: center;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+.flipbook {
+  margin: 0 auto;
+}
+
+.book-markers {
+  display: flex;
+  z-index: 10;
+}
+
+.book-markers--rail {
+  position: absolute;
+  top: 4rem;
+  right: 0;
+  transform: translateX(100%);
+  flex-direction: column;
+  gap: 0.6rem;
+  max-width: calc(var(--marker-rail-width) - 0.5rem);
+  pointer-events: auto;
+}
+
+.book-markers--bar {
+  position: relative;
+  z-index: 20;
+  flex-shrink: 0;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.4rem;
+  max-width: 100%;
+  max-height: max(2rem, calc(var(--marker-bar-height) - 0.75rem));
+  overflow-y: auto;
+  padding: 0 0.5rem;
+  pointer-events: auto;
+}
+
+.book-marker {
+  font-family: var(--font-book-title);
+  font-size: 0.95rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  color: #fffaf0;
+  background: var(--accent-color);
+  border: 1px solid var(--accent-color-border);
+  border-radius: 6px;
+  padding: 0.6rem 0.9rem;
+  cursor: pointer;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.25);
+  transition: transform 0.15s ease, background 0.15s ease;
+  text-align: left;
+  max-width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.book-marker:hover {
+  background: var(--accent-color-hover);
+}
+
+.book-markers--rail .book-marker {
+  border-left: none;
+  border-radius: 0 6px 6px 0;
+  padding-left: 0.75rem;
+}
+
+.book-markers--rail .book-marker:hover {
+  transform: translateX(6px);
+}
+
+.book-markers--rail .book-marker:active {
+  transform: translateX(2px);
+}
+
+.book-markers--bar .book-marker {
+  font-size: 0.85rem;
+  padding: 0.45rem 0.8rem;
+}
+
+.book-markers--bar .book-marker:hover {
+  transform: translateY(-2px);
+}
+
+.book-markers--bar .book-marker:active {
+  transform: translateY(0);
+}
