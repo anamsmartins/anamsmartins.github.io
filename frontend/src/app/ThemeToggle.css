@@ -1,0 +1,178 @@
+.theme-switch {
+  --duration: 0.4s;
+  --track-width: 44px;
+  --track-height: 24px;
+  --knob-size: 18px;
+  --knob-gap: 3px;
+  --knob-travel: calc(var(--track-width) - var(--knob-size) - var(--knob-gap) * 2);
+  --switch-accent: var(--professional-accent-color);
+  --switch-accent-light: var(--professional-accent-color-light);
+  --switch-muted: #6b7280;
+  --switch-surface: #ffffff;
+  --switch-border: #d1d5db;
+  --switch-shadow: rgba(47, 79, 122, 0.18);
+  --s: 1;
+
+  position: fixed;
+  top: 1.25rem;
+  right: 1.25rem;
+  z-index: 40;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.35rem 0.625rem 0.35rem 0.5rem;
+  border-radius: 999px;
+  background: var(--switch-surface);
+  border: 1px solid var(--switch-border);
+  box-shadow:
+    0 2px 8px var(--switch-shadow),
+    0 1px 2px rgba(0, 0, 0, 0.06);
+  cursor: pointer;
+  transform: scale(var(--s)) translateZ(0);
+  transition:
+    transform 0.2s,
+    box-shadow 0.2s,
+    border-color 0.2s;
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
+}
+
+html[data-theme='fantasy'] .theme-switch {
+  --switch-accent: var(--fantasy-accent-color);
+  --switch-accent-light: #f0e4d8;
+  --switch-muted: #8a7568;
+  --switch-surface: rgba(255, 252, 245, 0.94);
+  --switch-border: rgba(110, 85, 39, 0.35);
+  --switch-shadow: rgba(68, 44, 28, 0.16);
+}
+
+.theme-switch:hover {
+  border-color: var(--switch-accent);
+  box-shadow:
+    0 4px 14px var(--switch-shadow),
+    0 0 0 3px color-mix(in srgb, var(--switch-accent) 12%, transparent);
+}
+
+.theme-switch:active {
+  --s: 0.97;
+}
+
+.theme-switch--nudge {
+  animation: theme-switch-nudge 2.4s ease-in-out infinite;
+}
+
+@keyframes theme-switch-nudge {
+  0%,
+  100% {
+    box-shadow:
+      0 2px 8px var(--switch-shadow),
+      0 0 0 0 color-mix(in srgb, var(--switch-accent) 0%, transparent);
+  }
+  50% {
+    box-shadow:
+      0 4px 16px var(--switch-shadow),
+      0 0 0 5px color-mix(in srgb, var(--switch-accent) 22%, transparent);
+  }
+}
+
+.theme-switch__option {
+  display: inline-flex;
+  align-items: center;
+  color: var(--switch-muted);
+  transition: color var(--duration);
+}
+
+.theme-switch__option--active {
+  color: var(--switch-accent);
+}
+
+.theme-switch__icon {
+  width: 13px;
+  height: 13px;
+  flex-shrink: 0;
+  display: block;
+}
+
+.theme-switch__control {
+  position: relative;
+  flex-shrink: 0;
+  width: var(--track-width);
+  height: var(--track-height);
+}
+
+.theme-switch__track {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 999px;
+  background: var(--switch-accent-light);
+  border: 1px solid color-mix(in srgb, var(--switch-accent) 35%, var(--switch-border));
+  transition:
+    background-color var(--duration),
+    border-color var(--duration);
+}
+
+.theme-switch input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: absolute;
+  z-index: 1;
+  top: var(--knob-gap);
+  left: var(--knob-gap);
+  width: var(--knob-size);
+  height: var(--knob-size);
+  margin: 0;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  outline: none;
+  pointer-events: none;
+  background: #fff;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.22);
+  transform: translateX(0);
+  transition: transform var(--duration) cubic-bezier(0.34, 1.4, 0.64, 1);
+}
+
+.theme-switch input:checked {
+  transform: translateX(var(--knob-travel));
+}
+
+.theme-switch input:checked + .theme-switch__track {
+  background: color-mix(in srgb, var(--switch-accent) 18%, var(--switch-accent-light));
+  border-color: color-mix(in srgb, var(--switch-accent) 55%, var(--switch-border));
+}
+
+.theme-switch input:focus-visible + .theme-switch__track {
+  box-shadow: 0 0 0 2px color-mix(in srgb, var(--switch-accent) 45%, transparent);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .theme-switch {
+    transition: none;
+    animation: none;
+  }
+
+  .theme-switch--nudge {
+    animation: none;
+    box-shadow:
+      0 2px 8px var(--switch-shadow),
+      0 0 0 3px color-mix(in srgb, var(--switch-accent) 18%, transparent);
+  }
+
+  .theme-switch input,
+  .theme-switch__track,
+  .theme-switch__option {
+    transition: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .theme-switch {
+    top: auto;
+    bottom: 1.25rem;
+    right: 1rem;
+    gap: 0.375rem;
+    padding: 0.4rem 0.5rem;
+  }
+}

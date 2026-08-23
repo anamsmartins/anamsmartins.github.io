@@ -1,0 +1,84 @@
+.experience-list {
+  --timeline-gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: var(--timeline-gap);
+  overflow-y: auto;
+}
+
+.experience-item {
+  display: flex;
+  gap: 1rem;
+}
+
+.experience-item-rail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-shrink: 0;
+  width: 20%;
+}
+
+.experience-item:not(:last-child) .experience-item-rail::after {
+  content: '';
+  flex: 1 0 auto;
+  width: 3px;
+  min-height: var(--timeline-gap);
+  margin-bottom: calc(-1 * var(--timeline-gap));
+  background: var(--accent-color);
+  border-radius: 999px;
+}
+
+.experience-item-image {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  background-color: transparent;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.experience-item-image--empty {
+  border: 1px dashed #d9cdb3;
+}
+
+.experience-item-body {
+  flex: 1;
+  min-width: 0;
+}
+
+.experience-item-role,
+.experience-item-period {
+  font-family: var(--font-book-title);
+  color: var(--font-book-text-color-dark);
+}
+
+.experience-item-role {
+  font-size: 1.45rem;
+}
+
+.experience-item-period {
+  font-size: 1.2rem;
+  align-self: center;
+}
+
+.experience-item-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.experience-item-company {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  color: var(--font-book-text-color-light);
+  margin-bottom: 0.3rem;
+  font-size: 0.95rem
+}
+
+.experience-item-description {
+  margin: 0;
+  line-height: 1.5;
+  font-size: 0.95rem;
+}

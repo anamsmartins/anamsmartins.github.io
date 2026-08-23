@@ -1,0 +1,946 @@
+{
+  "settings": {
+    "intro": "A collection of academic and personal projects exploring ideas, building solutions, and solving interesting problems.",
+    "githubIconUrl": "/assets/book/project-url-icon.png",
+    "linkIcons": {
+      "github": "/assets/book/project-url-icon.png",
+      "demo": null,
+      "report": null,
+      "play": "/assets/book/project-link-play.svg"
+    }
+  },
+  "categories": [
+    {
+      "id": "web",
+      "label": "Web",
+      "shortLabel": "Web"
+    },
+    {
+      "id": "mobile",
+      "label": "Mobile",
+      "shortLabel": "Mobile"
+    },
+    {
+      "id": "cloud",
+      "label": "Cloud",
+      "shortLabel": "Cloud"
+    },
+    {
+      "id": "ai",
+      "label": "Artificial Intelligence",
+      "shortLabel": "AI"
+    },
+    {
+      "id": "iot",
+      "label": "Internet of Things",
+      "shortLabel": "IoT"
+    },
+    {
+      "id": "games",
+      "label": "Games",
+      "shortLabel": "Games"
+    },
+    {
+      "id": "other",
+      "label": "Other",
+      "shortLabel": "Other"
+    }
+  ],
+  "projects": [
+    {
+      "id": "incidentalists",
+      "categoryIds": [
+        "web",
+        "cloud"
+      ],
+      "importance": 5,
+      "name": "Incidentalists",
+      "imageUrl": "/assets/projects/Incidentalists/Incidentalists-home.png",
+      "images": [
+        {
+          "url": "/assets/projects/Incidentalists/Incidentalists-home.png",
+          "legend": "Dashboard overview"
+        },
+        {
+          "url": "/assets/projects/Incidentalists/incidentalists-occurrences.png",
+          "legend": "Occurrences view"
+        }
+      ],
+      "description": "An enterprise-level application that optimizes the management of insurance claims for insured assets.",
+      "features": [
+        "Role-based access control for multiple user types",
+        "External insurance API integration + bulk data import",
+        "Policy-validated claims lifecycle with automated closure",
+        "Real-time workflow notifications with WebSockets"
+      ],
+      "techStack": [
+        "Vue.js",
+        "Nuxt.js",
+        "Java EE",
+        "Node.js",
+        "PostgreSQL",
+        "Docker"
+      ],
+      "githubUrl": "https://github.com/Academcis/Project-DAE",
+      "links": [
+        {
+          "label": "GitHub Repository",
+          "url": "https://github.com/Academcis/Project-DAE",
+          "type": "github"
+        }
+      ]
+    },
+    {
+      "id": "fastuga",
+      "categoryIds": [
+        "web",
+        "cloud"
+      ],
+      "importance": 4,
+      "name": "Fastuga",
+      "imageUrl": "/assets/projects/Fastuga/fastuga-menu.png",
+      "images": [
+        {
+          "url": "/assets/projects/Fastuga/fastuga-home.png",
+          "legend": "Landing page"
+        },
+        {
+          "url": "/assets/projects/Fastuga/fastuga-menu.png",
+          "legend": "Restaurant menu"
+        },
+        {
+          "url": "/assets/projects/Fastuga/fastuga-add-item.png",
+          "legend": "Add item to order"
+        },
+        {
+          "url": "/assets/projects/Fastuga/fastuga-login.png",
+          "legend": "Login screen"
+        },
+        {
+          "url": "/assets/projects/Fastuga/fastuga-register.png",
+          "legend": "Registration form"
+        },
+        {
+          "url": "/assets/projects/Fastuga/fastuga-client-order.png",
+          "legend": "Client order placement"
+        },
+        {
+          "url": "/assets/projects/Fastuga/fastuga-client-payment.png",
+          "legend": "Client payment checkout"
+        },
+        {
+          "url": "/assets/projects/Fastuga/fastuga-chef-view.png",
+          "legend": "Chef kitchen view"
+        },
+        {
+          "url": "/assets/projects/Fastuga/fastuga-deliver-view.png",
+          "legend": "Delivery driver view"
+        },
+        {
+          "url": "/assets/projects/Fastuga/fastuga-manager-view.png",
+          "legend": "Manager dashboard"
+        }
+      ],
+      "description": "Full-featured SPA: order management, real-time notifications, loyalty points, and role-based user accounts.",
+      "features": [
+        "Multi-role SPA with authorization",
+        "End-to-end distributed architecture",
+        "Loyalty & order lifecycle management with points system",
+        "Real-time order orchestration with WebSockets"
+      ],
+      "techStack": [
+        "Vue.js",
+        "Laravel",
+        "MySQL",
+        "Docker",
+        "Laravel Sail"
+      ],
+      "githubUrl": "https://github.com/Academcis/fastuga-dad-ipleiria",
+      "links": [
+        {
+          "label": "GitHub Repository",
+          "url": "https://github.com/Academcis/fastuga-dad-ipleiria",
+          "type": "github"
+        }
+      ]
+    },
+    {
+      "id": "somiod",
+      "categoryIds": [
+        "iot"
+      ],
+      "importance": 4,
+      "name": "Somiod",
+      "imageUrl": "/assets/projects/Somiod/somiod-lights-and-remote-on.png",
+      "images": [
+        {
+          "url": "/assets/projects/Somiod/somiod-lights-and-remote-on.png",
+          "legend": "Lights and remote on"
+        },
+        {
+          "url": "/assets/projects/Somiod/somiod-lights-and-remote-off.png",
+          "legend": "Lights and remote off"
+        },
+        {
+          "url": "/assets/projects/Somiod/somiod-swagger.png",
+          "legend": "Swagger API documentation"
+        }
+      ],
+      "description": "An IoT middleware that enables interoperable data sharing and real-time device control across heterogeneous applications.",
+      "features": [
+        "IoT middleware for cross-platform interoperability",
+        "Real-time event notifications via MQTT",
+        "RESTful API with a hierarchical resource model",
+        "Swagger-based API documentation"
+      ],
+      "techStack": [
+        ".NET",
+        "MQTT",
+        "Mosquitto",
+        "C#",
+        "XML",
+        "Swagger"
+      ],
+      "githubUrl": "https://github.com/Academcis/somiod-is-ipleiria",
+      "links": [
+        {
+          "label": "GitHub Repository",
+          "url": "https://github.com/Academcis/somiod-is-ipleiria",
+          "type": "github"
+        }
+      ]
+    },
+    {
+      "id": "tauri-dex",
+      "categoryIds": [
+        "other"
+      ],
+      "importance": 0,
+      "name": "Tauri-Dex",
+      "imageUrl": "/assets/projects/Tauri/tauri-pokemon.png",
+      "images": [
+        {
+          "url": "/assets/projects/Tauri/tauri-home.png",
+          "legend": "Pokédex initial screen"
+        },
+        {
+          "url": "/assets/projects/Tauri/tauri-pokemon.png",
+          "legend": "Pokédex with a pokemon selected"
+        }
+      ],
+      "description": "A quick tutorial to experience the Tauri framework.",
+      "features": [
+        "Tutorial setup for the Tauri framework",
+        "Desktop Pokédex built with Tauri, searchable by Pokémon name",
+        "Fetches live data from PokeAPI through a Rust backend"
+      ],
+      "techStack": [
+        "Tauri",
+        "Rust",
+        "Javascript",
+        "PokeAPI"
+
+      ],
+      "githubUrl": "https://github.com/Academcis/tauri-getting-started",
+      "links": [
+        {
+          "label": "GitHub Repository",
+          "url": "https://github.com/Academcis/tauri-getting-started",
+          "type": "github"
+        }
+      ]
+    },
+    {
+      "id": "careline",
+      "categoryIds": [
+        "mobile",
+        "web",
+        "iot"
+      ],
+      "importance": 5,
+      "name": "Careline",
+      "imageUrl": "/assets/projects/CareLine/careline-patient-home.png",
+      "images": [
+        {
+          "url": "/assets/projects/CareLine/careline-project-idea.png",
+          "legend": "System architecture overview"
+        },
+        {
+          "url": "/assets/projects/CareLine/careline-login.png",
+          "legend": "Sign in page"
+        },
+        {
+          "url": "/assets/projects/CareLine/careline-patient-home.png",
+          "legend": "Patient home dashboard"
+        },
+        {
+          "url": "/assets/projects/CareLine/careline-patient-measures.png",
+          "legend": "Patient measures history"
+        },
+        {
+          "url": "/assets/projects/CareLine/careline-patient-triage.png",
+          "legend": "Patient triage list"
+        },
+        {
+          "url": "/assets/projects/CareLine/careline-patient-diagnoses.png",
+          "legend": "Patient diagnoses"
+        },
+        {
+          "url": "/assets/projects/CareLine/careline-patient-drone-list.png",
+          "legend": "Drone delivery list"
+        },
+        {
+          "url": "/assets/projects/CareLine/careline-client-drone-view.png",
+          "legend": "Drone route map"
+        },
+        {
+          "url": "/assets/projects/CareLine/careline-prescription.png",
+          "legend": "Diagnosis prescription report"
+        },
+        {
+          "url": "/assets/projects/CareLine/careline-professional-patients.png",
+          "legend": "Professional patients view"
+        },
+        {
+          "url": "/assets/projects/CareLine/careline-professional-triage-list.png",
+          "legend": "Professional triage queue"
+        },
+        {
+          "url": "/assets/projects/CareLine/careline-professional-triage-review.png",
+          "legend": "Triage review form"
+        },
+        {
+          "url": "/assets/projects/CareLine/careline-professional-diagnoses.png",
+          "legend": "Professional diagnoses"
+        },
+        {
+          "url": "/assets/projects/CareLine/careline-ios-home.png",
+          "legend": "iOS summary dashboard"
+        },
+        {
+          "url": "/assets/projects/CareLine/careline-ios-heartbeat-measure.png",
+          "legend": "iOS heartbeat measurement"
+        },
+        {
+          "url": "/assets/projects/CareLine/careline-ios-temperature.png",
+          "legend": "iOS temperature measurement"
+        },
+        {
+          "url": "/assets/projects/CareLine/careline-ios-ar-help.png",
+          "legend": "AR temperature reading guide"
+        },
+        {
+          "url": "/assets/projects/CareLine/careline-ios-triage.png",
+          "legend": "iOS triage form"
+        },
+        {
+          "url": "/assets/projects/CareLine/careline-iot-scenario.png",
+          "legend": "IoT temperature sensor prototype"
+        }
+      ],
+      "description": "A remote health service that helps with daily health support, triage processes, and simulated drone delivery of prescribed medications.",
+      "features": [
+        "Automated triage through iOS heart rate and IoT temperature measurements",
+        "Role-based access control for patients and professionals",
+        "Real-time updates on triage status and digital twin for heart rate monitoring",
+        "Simulated drone delivery of prescribed medications",
+        "AR overlay for temperature measurements assistance",
+        "Real-time updates on triage status with WebSockets"
+      ],
+      "techStack": [
+        "Java",
+        "Spring Boot",
+        "React",
+        "Javascript",
+        "Go",
+        "iOS",
+        "SwiftUI",
+        "Digital Twin",
+        "ESP8266",
+        "DS18B20",
+        "C++",
+        "AR"
+      ],
+      "githubUrl": "https://github.com/Academcis/Careline",
+      "links": [
+        {
+          "label": "GitHub Repository",
+          "url": "https://github.com/Academcis/Careline",
+          "type": "github"
+        }
+      ]
+    },
+    {
+      "id": "handitalk",
+      "categoryIds": [
+        "mobile",
+        "ai"
+      ],
+      "importance": 4,
+      "name": "HandiTalk",
+      "imageUrl": "/assets/projects/HandiTalk/handitalk-make.png",
+      "images": [
+        {
+          "url": "/assets/projects/HandiTalk/handitalk-home.png",
+          "legend": "Home page"
+        },
+        {
+          "url": "/assets/projects/HandiTalk/handitalk-quick-learn.png",
+          "legend": "Quick learn mode"
+        },
+        {
+          "url": "/assets/projects/HandiTalk/handitalk-make.png",
+          "legend": "Make a gesture"
+        }
+      ],
+      "description": "An Android application designed to support the learning of American Sign Language (ASL) through the use of Artificial Intelligence and gesture recognition.",
+      "features": [
+        "Live gesture recognition with MediaPipe",
+        "ASL word recognition with Roboflow",
+        "Custom dataset creation with 1046 images and manually keypoint annotation",
+        "36 gesture classes (26 ASL letters + 10 common words)"
+      ],
+      "techStack": [
+        "Android",
+        "MediaPipe",
+        "Python",
+        "Roboflow",
+        "ASL",
+        "dataset"
+      ],
+      "githubUrl": "https://github.com/Academcis/cas-handi-talk",
+      "links": [
+        {
+          "label": "GitHub Repository",
+          "url": "https://github.com/Academcis/cas-handi-talk",
+          "type": "github"
+        }
+      ]
+    },
+    {
+      "id": "fastuga-driver",
+      "categoryIds": [
+        "mobile",
+        "cloud"
+      ],
+      "importance": 4,
+      "name": "Fastuga Driver",
+      "imageUrl": "/assets/projects/Fastuga-Driver/fastuga-driver-order-details.png",
+      "images": [
+        {
+          "url": "/assets/projects/Fastuga-Driver/fastuga-driver-login.png",
+          "legend": "Login screen"
+        },
+        {
+          "url": "/assets/projects/Fastuga-Driver/fastuga-driver-register.png",
+          "legend": "Driver registration form"
+        },
+        {
+          "url": "/assets/projects/Fastuga-Driver/fastuga-driver-menu.png",
+          "legend": "Available orders dashboard"
+        },
+        {
+          "url": "/assets/projects/Fastuga-Driver/fastuga-driver-order-details.png",
+          "legend": "Order details with route map"
+        },
+        {
+          "url": "/assets/projects/Fastuga-Driver/fastuga-driver-statistics.png",
+          "legend": "Driver statistics"
+        },
+        {
+          "url": "/assets/projects/Fastuga-Driver/fastuga-driver-cancel-delivery.png",
+          "legend": "Cancel delivery confirmation"
+        }
+      ],
+      "description": "A mobile app to help FasTuga drivers manage deliveries, track earnings and optimise routes.",
+      "features": [
+        "Delivery management with real-time order tracking",
+        "Optimised route planning with OpenStreetMap integration",
+        "Distance-based pay and live balance updates",
+        "Performance statistics"
+      ],
+      "techStack": [
+        "Android",
+        "Firebase",
+        "Auto Testing",
+        "Katalon Studio",
+        "Bitbucket",
+        "OpenStreetMap"
+      ],
+      "githubUrl": "https://github.com/Academcis/FasTuga-Driver",
+      "links": [
+        {
+          "label": "GitHub Repository",
+          "url": "https://github.com/Academcis/FasTuga-Driver",
+          "type": "github"
+        }
+      ]
+    },
+    {
+      "id": "virtual-butler",
+      "categoryIds": [
+        "mobile",
+        "iot"
+      ],
+      "importance": 3,
+      "name": "Virtual Butler",
+      "imageUrl": "/assets/projects/Virtual-Butler/virtual-butler-architecture.png",
+      "images": [
+        {
+          "url": "/assets/projects/Virtual-Butler/virtual-butler-architecture.png",
+          "legend": "System architecture diagram"
+        },
+        {
+          "url": "/assets/projects/Virtual-Butler/virtual-butler-acme-setup.png",
+          "legend": "ACME oneM2M resource hierarchy"
+        },
+        {
+          "url": "/assets/projects/Virtual-Butler/virtual-butler-home.png",
+          "legend": "Smart Butler home screen"
+        },
+        {
+          "url":"/assets/projects/Virtual-Butler/virtual-butler-talking.png",
+          "legend": "Voice interaction in progress"
+        }
+      ],
+      "description": "Voice-controlled Android butler that talks to a oneM2M (ACME) smart-home network and answers you out loud.",
+      "features": [
+        "IoT queries over ACME",
+        "Speech-to-Text (STT) questions to the ACME smart home",
+        "Real-time vocalized Text-to-Speech (TTS) updates from the smart home with WebSockets"
+      ],
+      "techStack": [
+        "Android",
+        "STT",
+        "TTS",
+        "ACME",
+        "oneM2M",
+        "Python"
+      ],
+      "githubUrl": "https://github.com/Academcis/VirtualButler",
+      "links": [
+        {
+          "label": "GitHub Repository",
+          "url": "https://github.com/Academcis/VirtualButler",
+          "type": "github"
+        }
+      ]
+    },
+    {
+      "id": "ble-beacons",
+      "categoryIds": [
+        "mobile",
+        "iot"
+      ],
+      "importance": 2,
+      "name": "BLE Beacons",
+      "description": "An Android museum application that scans Ruuvi BLE beacons and opens exhibit info for whichever beacon is closest.",
+      "features": [
+        "Beacon-based contextual information",
+        "Proximity-based routing",
+        "BLE scan by MAC address"
+      ],
+      "techStack": [
+        "Android",
+        "BLE",
+        "Java",
+        "Ruuvi",
+        "Beacons"
+      ],
+      "githubUrl": "https://github.com/Academcis/MCS_ble_beacons",
+      "links": [
+        {
+          "label": "GitHub Repository",
+          "url": "https://github.com/Academcis/MCS_ble_beacons",
+          "type": "github"
+        }
+      ]
+    },
+    {
+      "id": "feeltune-ai",
+      "categoryIds": [
+        "ai"
+      ],
+      "importance": 5,
+      "name": "FeelTune AI",
+      "imageUrl": "/assets/projects/FeelTuneAI/feeltune-ai-initial-screen.png",
+      "images": [
+        {
+          "url": "/assets/projects/FeelTuneAI/feeltune-ai-process.png",
+          "legend": "Recommendation workflow diagram"
+        },
+        {
+          "url": "/assets/projects/FeelTuneAI/feeltune-ai-initial-screen.png",
+          "legend": "Welcome screen"
+        },
+        {
+          "url": "/assets/projects/FeelTuneAI/feeltune-ai-pick-target-emotion.png",
+          "legend": "Target emotion picker"
+        },
+        {
+          "url": "/assets/projects/FeelTuneAI/feeltune-ai-training-home-screen.png",
+          "legend": "Dataset building home"
+        },
+        {
+          "url": "/assets/projects/FeelTuneAI/feeltune-ai-training-screen.png",
+          "legend": "Music training progress"
+        },
+        {
+          "url": "/assets/projects/FeelTuneAI/feeltune-ai-building-model.png",
+          "legend": "Model training loading"
+        }
+      ],
+      "description": "An emotion-aware ML music recommendation app that uses live facial expression detection, song mood scores, and environmental data to recommend music that shifts your current mood toward a target emotion.",
+      "features": [
+        "Current mood detection using facial expression recognition",
+        "Music recommendation based on current mood and target emotion",
+        "Custom MLP machine learning model creation tailored to each user"
+      ],
+      "techStack": [  
+        "MLP",
+        "ETL",
+        "Python",
+        "PyQT5",
+        "Pytorch",
+        "Keras",
+        "Pandas",
+        "Scikit-learn",
+        "numpy",
+        "Music",
+        "MER",
+        "Valence",
+        "Arousal"
+      ],
+      "githubUrl": "https://github.com/anamsmartins/FeelTuneAI",
+      "links": [
+        {
+          "label": "GitHub Repository",
+          "url": "https://github.com/anamsmartins/FeelTuneAI",
+          "type": "github"
+        },
+        {
+          "label": "Published Article",
+          "url": "https://link.springer.com/chapter/10.1007/978-3-031-96228-8_27",
+          "type": "article"
+        }
+      ]
+    },
+    {
+      "id": "mummymaze",
+      "categoryIds": [
+        "ai"
+      ],
+      "importance": 1,
+      "name": "MummyMaze",
+      "imageUrl": "/assets/projects/MummyMaze/mummy-maze-init-screen.png",
+      "images": [
+        {
+          "url": "/assets/projects/MummyMaze/mummy-maze-init-screen.png",
+          "legend": "Puzzle solver interface"
+        },
+        {
+          "url": "/assets/projects/MummyMaze/mummy-maze-tough-level.png",
+          "legend": "Complex level with enemies"
+        },
+        {
+          "url": "/assets/projects/MummyMaze/mummy-maze-solved-solution.png",
+          "legend": "Solved maze with solution path"
+        },
+        {
+          "url": "/assets/projects/MummyMaze/mummy-maze-statistics.png",
+          "legend": "Algorithm comparison statistics"
+        }
+      ],
+      "description": "Software application using informed and uninformed search algorithms with custom heuristics to solve Mummy Maze levels and compare performance.",
+      "features": [
+        "Uninformed and informed solvers (BFS, DFS, A*, greedy, IDA*, beam, and more) to get the hero to the exit",
+        "Custom heuristics that score exit distance, enemies, and walls so informed search can pick safer paths",
+        "Maze simulation with a Hero vs white/red mummies and scorpions, with walls, traps, and doors, on a set of text levels"
+      ],
+      "techStack": [
+        "Java",
+        "Heuristics",
+        "Search Algorithms",
+        "BFS",
+        "DFS"
+      ],
+      "githubUrl": "https://github.com/Academcis/MummyMaze-AI",
+      "links": [
+        {
+          "label": "GitHub Repository",
+          "url": "https://github.com/Academcis/MummyMaze-AI",
+          "type": "github"
+        }
+      ]
+    },
+    {
+      "id": "fastuga-cloud",
+      "categoryIds": [
+        "cloud",
+        "web"
+      ],
+      "importance": 3,
+      "name": "Fastuga Cloud",
+      "imageUrl": "/assets/projects/Fastuga-Cloud/fastuga-cloud-cloud-architecture.png",
+      "images": [
+        {
+          "url": "/assets/projects/Fastuga-Cloud/fastuga-cloud-local-architecture.png",
+          "legend": "Local monolithic architecture"
+        },
+        {
+          "url": "/assets/projects/Fastuga-Cloud/fastuga-cloud-local-decoupled-architecture.png",
+          "legend": "Local decoupled microservices"
+        },
+        {
+          "url": "/assets/projects/Fastuga-Cloud/fastuga-cloud-cloud-architecture.png",
+          "legend": "Cloud deployment on GCP and Aiven"
+        }
+      ],
+      "description": "A monolithic website split into containerized services, developed and run locally with Docker, then deployed and orchestrated on Kubernetes using Terraform.",
+      "features": [
+        "Microservice split into their own Docker containers",
+        "Kubernetes deployment and orchestration",
+        "Infrastructure as Code with Terraform"
+      ],
+      "techStack": [
+        "Docker",
+        "Kubernetes",
+        "Terraform"
+      ],
+      "githubUrl": "https://github.com/Academcis/cloud-computing-fastuga",
+      "links": [
+        {
+          "label": "GitHub Repository",
+          "url": "https://github.com/Academcis/cloud-computing-fastuga",
+          "type": "github"
+        }
+      ]
+    },
+    {
+      "id": "greencanvas",
+      "categoryIds": [
+        "other"
+      ],
+      "importance": 4,
+      "name": "GreenCanvas",
+      "imageUrl": "/assets/projects/GreenCanvas/greencanvas-blender-ui.png",
+      "images": [
+        {
+          "url": "/assets/projects/GreenCanvas/greencanvas-initial-design-idea.png",
+          "legend": "Initial UX wireframe flow"
+        },
+        {
+          "url": "/assets/projects/GreenCanvas/greencanvas-blender-ui.png",
+          "legend": "Blender addon interface"
+        },
+        {
+          "url": "/assets/projects/GreenCanvas/greencanvas-blender-branch-panel.png",
+          "legend": "Branch drawing tool panel"
+        },
+        {
+          "url": "/assets/projects/GreenCanvas/greencanvas-blender-leaf-panel.png",
+          "legend": "Leaf curvature tool panel"
+        },
+        {
+          "url": "/assets/projects/GreenCanvas/greencanvas-generated-plants.png",
+          "legend": "Generated 3D plant models"
+        }
+      ],
+      "description": "A sketch-based modeling addon for Blender that transforms simple 2D plant drawings into fully realized 3D plant models.",
+      "features": [
+        "In-Blender 2D sketching of trunks, branches, and leaves",
+        "Sketch-to-3D generation in Accurate or Realistic mode",
+        "Multiple plant variations from a single sketch",
+        "LoD, leaf propagation, and native Blender editing after build"
+      ],
+      "techStack": [
+        "Addon",
+        "Blender",
+        "2D to 3D",
+        "Python",
+        "LoD",
+        "Mesh",
+        "Convex Hull",
+        "B-Spline"
+      ],
+      "githubUrl": "https://github.com/anamsmartins/GreenCanvas",
+      "links": [
+        {
+          "label": "GitHub Repository",
+          "url": "https://github.com/anamsmartins/GreenCanvas",
+          "type": "github"
+        },
+        {
+          "label": "Published Article",
+          "url": "https://ieeexplore.ieee.org/document/11302684",
+          "type": "article"
+        }
+      ]
+    },
+    {
+      "id": "laredoute-3d-web-experience",
+      "categoryIds": [
+        "web"
+      ],
+      "importance": 2,
+      "name": "LaRedoute 3D Web Experience",
+      "imageUrl": "/assets/projects/Laredoute-3d-web-exp/laredoute-3d-web-exp-specific-product-3d-interaction.png",
+      "images": [
+        {
+          "url": "/assets/projects/Laredoute-3d-web-exp/laredoute-3d-web-exp-product-list.png",
+          "legend": "Product search results"
+        },
+        {
+          "url": "/assets/projects/Laredoute-3d-web-exp/laredoute-3d-web-exp-specific-product.png",
+          "legend": "Product page overview"
+        },
+        {
+          "url": "/assets/projects/Laredoute-3d-web-exp/laredoute-3d-web-exp-specific-product-full.png",
+          "legend": "Full product page layout"
+        },
+        {
+          "url": "/assets/projects/Laredoute-3d-web-exp/laredoute-3d-web-exp-specific-product-3d-interaction.png",
+          "legend": "3D product viewer"
+        },
+        {
+          "url": "/assets/projects/Laredoute-3d-web-exp/laredoute-3d-web-exp-specific-product-3d-view-rotated.png",
+          "legend": "Rotated 3D view"
+        },
+        {
+          "url": "/assets/projects/Laredoute-3d-web-exp/laredoute-3d-web-exp-specific-product-3d-view-open-doors.png",
+          "legend": "Open doors interaction"
+        },
+        {
+          "url": "/assets/projects/Laredoute-3d-web-exp/laredoute-3d-web-exp-specific-product-3d-view-pick-texture.png",
+          "legend": "Texture picker"
+        },
+        {
+          "url": "/assets/projects/Laredoute-3d-web-exp/laredoute-3d-web-exp-specific-product-3d-view-night-time.png",
+          "legend": "Night time lighting"
+        },
+        {
+          "url": "/assets/projects/Laredoute-3d-web-exp/laredoute-3d-web-exp-specific-product-3d-view-dimensions.png",
+          "legend": "Dimensions overlay"
+        },
+        {
+          "url": "/assets/projects/Laredoute-3d-web-exp/laredoute-3d-web-exp-specific-product-3d-view-extra-objects.png",
+          "legend": "Extra scene objects"
+        }
+      ],
+      "description": "A static LaRedoute storefront prototype with Three.js furniture you can open and inspect in 3D",
+      "features": [
+        "3D web furniture viewer built with Three.js",
+        "Interactive 3D models with texture changes, time-of-day controls, rotation, and click-to-open",
+        "3D navigation with zoom and model exploration"
+      ],
+      "techStack": [
+        "Three.js",
+        "HTML5",
+        "CSS",
+        "Javascript",
+        "3D",
+        "Blender"
+      ],
+      "githubUrl": "https://github.com/Academcis/SGI",
+      "links": [
+        {
+          "label": "GitHub Repository",
+          "url": "https://github.com/Academcis/SGI",
+          "type": "github"
+        }
+      ]
+    },
+    {
+      "id": "bloodshot-chaos",
+      "categoryIds": [
+        "games",
+        "mobile"
+      ],
+      "importance": 2,
+      "name": "Bloodshot Chaos",
+      "imageUrl": "/assets/projects/Bloodshot-Chaos/bloodshot-chaos-ui.png",
+      "images": [
+        {
+          "url": "/assets/projects/Bloodshot-Chaos/bloodshot-chaos-ui.png",
+          "legend": "UI Controls"
+        }
+      ],
+      "description": "A pixel-art mobile action shooter where blood is both ammo and healing, so you have to fight, loot, and survive at the same time.",
+      "features": [
+        "A 30-point blood tank enables shooting and full healing; Switches to melee when empty",
+        "Wave combat with three enemy types plus a final boss",
+        "Dual-stick mobile controls: left stick moves, right stick aims and auto-fires",
+        "Score for hits, kills, heals, and pickups, with rune pillars and a bonus NPC map"
+      ],
+      "techStack": [
+        "Android",
+        "Unity",
+        "C#",
+        "Shooter",
+        "2D"
+      ],
+      "githubUrl": "https://github.com/Academcis/bloodshot-caos",
+      "links": [
+        {
+          "label": "GitHub Repository",
+          "url": "https://github.com/Academcis/bloodshot-caos",
+          "type": "github"
+        }
+      ]
+    },
+    {
+      "id": "gmtk-gamejam-2024",
+      "categoryIds": [
+        "games"
+      ],
+      "importance": 2,
+      "name": "GMTK GameJam 2024",
+      "imageUrl": "/assets/projects/LittleTail/littletail-view.png",
+      "images": [
+        {
+          "url": "/assets/projects/LittleTail/littletail-view.png",
+          "legend": "Garden exploration view"
+        },
+        {
+          "url": "/assets/projects/LittleTail/littletail-stretch-puzzle.png",
+          "legend": "Stretch puzzle gameplay"
+        },
+        {
+          "url": "/assets/projects/LittleTail/littletail-final-view-preview.png",
+          "legend": "Character close-up preview"
+        }
+      ],
+      "description": "A short 2D puzzle adventure where a gardener navigates a garden by solving challenges based on scale. Developed in 4 days for the GTMK Game Jam 2024, themed “Built To Scale.” ",
+      "features": [
+        "Stretch and place mice to solve spatial puzzles",
+        "Explore a garden and interact with quirky characters",
+        "Three puzzle styles: scale, plump, and slide",
+        "Hand-drawn art with music, SFX, and save/continue"
+      ],
+      "techStack": [
+        "C#",
+        "Unity",
+        "Game Jam",
+        "2D"
+      ],
+      "githubUrl": "https://github.com/anamsmartins/GMTKGameJam2024",
+      "links": [
+        {
+          "label": "GitHub Repository",
+          "url": "https://github.com/anamsmartins/GMTKGameJam2024",
+          "type": "github"
+        },
+        {
+          "label": "Submission Page",
+          "url": "https://itch.io/jam/gmtk-2024/rate/2916229",
+          "type": "article"
+        },
+        {
+          "label": "Play the Game",
+          "url": "https://yunikyon.itch.io/littletail",
+          "type": "play"
+        }
+      ]
+    }
+  ]
+}

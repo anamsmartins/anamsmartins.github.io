@@ -1,0 +1,93 @@
+@font-face {
+  font-family: 'Book Title';
+  src: url('/fonts/wizzta.regular.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Book Text';
+  src: url('/fonts/amretiqua.demo.otf') format('opentype');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  color: #2c2416;
+  background: #f4efe4;
+  font-family: 'Patrick Hand', cursive;
+  line-height: 1;
+  font-weight: 400;
+  font-size: 17px;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  --font-book-title: 'Book Title', Georgia, serif;
+  --font-book-text: 'Book Text', Georgia, serif;
+  --cursor-fill-clickable: #c9a227;
+  --cursor-sparkle-color: #e8c86a;
+  --font-book-text-color: #2c2416;
+  --font-book-text-color-light: #884c34aa;
+  --font-book-text-color-dark: #884c34;
+  --book-map-border-color: #af8f53;
+  --book-map-country-color: rgba(228, 217, 189, 0.62);
+  --book-map-country-color-hover: rgba(255, 248, 225, 0.92);
+  --book-map-country-color-pressed: rgba(255, 235, 190, 0.95);
+  --book-map-country-label-color: #fffaf0;
+  --book-map-country-label-background-color: rgba(44, 36, 22, 0.82);
+  --book-map-country-label-border-color: rgba(255, 230, 170, 0.35);
+  --book-map-visited-country-color: rgba(180, 136, 48, 0.92);
+  --book-map-visited-country-color-hover: rgba(180, 136, 80, 1);
+  --book-map-visited-country-color-pressed: rgb(209, 155, 85);
+  --book-map-visited-country-label-background-color: rgba(82, 49, 24, 0.82);
+  --book-map-visited-country-label-border-color: rgba(153, 92, 68, 0.82);
+  /* Gap the book always keeps between itself and the edge of the window. */
+  --book-margin: 1.5rem;
+}
+
+.inline-accent {
+  color: var(--accent-color);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  overflow: hidden;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  min-height: 100dvh;
+}
+
+#root {
+  min-height: 100vh;
+  min-height: 100dvh;
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}

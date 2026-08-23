@@ -1,0 +1,123 @@
+html.sketch-cursor-active,
+html.sketch-cursor-active * {
+  cursor: none !important;
+}
+
+.sketch-cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100000;
+  width: 28px;
+  height: 28px;
+  pointer-events: none;
+  transform: translate(-2px, -2px);
+  transition: opacity 0.15s ease;
+  will-change: transform;
+}
+
+.sketch-cursor--hidden {
+  opacity: 0;
+}
+
+.sketch-cursor__svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+}
+
+.sketch-cursor__outline {
+  fill: none;
+  stroke: var(--font-book-text-color, #2c2416);
+  stroke-width: 1.6;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  paint-order: stroke fill;
+}
+
+.sketch-cursor__fill {
+  fill: var(--accent-color, #884c34);
+  stroke: none;
+  transform-box: fill-box;
+  transform-origin: 12% 18%;
+  transition:
+    fill 0.2s ease,
+    transform 0.28s cubic-bezier(0.34, 1.45, 0.64, 1);
+}
+
+.sketch-cursor--clickable .sketch-cursor__fill {
+  fill: var(--cursor-fill-clickable, #c9a227);
+}
+
+.sketch-cursor__sparkle {
+  opacity: 0;
+  transform-box: view-box;
+  transform-origin: 11.5% 10%;
+  transition: opacity 0.2s ease;
+}
+
+.sketch-cursor--clickable .sketch-cursor__sparkle {
+  opacity: 1;
+  animation: sketch-cursor-sparkle 1.6s ease-in-out infinite;
+}
+
+.sketch-cursor__sparkle-line {
+  fill: none;
+  stroke: var(--font-book-text-color, #2c2416);
+  stroke-width: 0.9;
+  stroke-linecap: butt;
+}
+
+.sketch-cursor--clicking .sketch-cursor__fill {
+  transform: scale(0.55);
+  transition:
+    fill 0.2s ease,
+    transform 0.1s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.sketch-cursor--clicking .sketch-cursor__sparkle {
+  animation: none;
+  opacity: 0.7;
+  transform: rotate(-15deg) scale(0.75);
+}
+
+@keyframes sketch-cursor-sparkle {
+  0%,
+  100% {
+    transform: rotate(-45deg) scale(0.92);
+    opacity: 0.75;
+  }
+
+  50% {
+    transform: rotate(-35deg) scale(1.08);
+    opacity: 1;
+  }
+}
+
+@media (pointer: coarse) {
+  html.sketch-cursor-active,
+  html.sketch-cursor-active * {
+    cursor: auto !important;
+  }
+
+  .sketch-cursor {
+    display: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .sketch-cursor--clickable .sketch-cursor__sparkle {
+    animation: none;
+    opacity: 1;
+    transform: rotate(-45deg);
+  }
+
+  .sketch-cursor__fill {
+    transition: transform 0.01s linear;
+  }
+
+  .sketch-cursor--clicking .sketch-cursor__fill {
+    transition: transform 0.01s linear;
+  }
+}

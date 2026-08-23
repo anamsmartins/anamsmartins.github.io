@@ -1,0 +1,203 @@
+.page {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+  background-color: #fffaf0;
+  color: #2c2416;
+}
+
+.page::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background-image:
+    radial-gradient(ellipse 18rem 12rem at 8% 6%, rgba(139, 111, 61, 0.12), transparent 70%),
+    radial-gradient(ellipse 16rem 14rem at 94% 96%, rgba(139, 111, 61, 0.1), transparent 70%),
+    radial-gradient(ellipse 10rem 8rem at 97% 12%, rgba(139, 111, 61, 0.07), transparent 70%);
+  box-shadow: inset 0 0 3.5rem rgba(90, 70, 30, 0.2);
+}
+
+.page-background {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  background-repeat: no-repeat;
+}
+
+.page-content {
+  position: relative;
+  z-index: 2;
+  width: var(--page-design-width, 550px);
+  height: var(--page-design-height, 600px);
+  transform: scale(var(--page-scale, 1));
+  transform-origin: top left;
+  box-sizing: border-box;
+  padding: 2rem 3rem 2rem 2rem;
+  display: flex;
+  flex-direction: column;
+  font-family: var(--font-book-text);
+  font-size: 1rem;
+  word-spacing: 3px;
+  line-height: 1.5;
+  scrollbar-width: thin;
+  scrollbar-color: var(--accent-color) rgba(239, 230, 208, 0.55);
+}
+
+.page-content * {
+  scrollbar-width: thin;
+  scrollbar-color: var(--accent-color) rgba(239, 230, 208, 0.55);
+}
+
+.page-content ::-webkit-scrollbar {
+  width: 0.4rem;
+  height: 0.4rem;
+}
+
+.page-content ::-webkit-scrollbar-track {
+  background: rgba(239, 230, 208, 0.45);
+  border-radius: 999px;
+}
+
+.page-content ::-webkit-scrollbar-thumb {
+  background: var(--accent-color);
+  border-radius: 999px;
+}
+
+.page-text {
+  flex: 1;
+  line-height: 1.6;
+  white-space: pre-wrap;
+  overflow-y: auto;
+}
+
+.page-image {
+  height: 35%;
+  min-height: 100px;
+  margin-bottom: 1rem;
+  border-radius: 4px;
+  background-color: #efe6d0;
+  background-size: cover;
+  background-position: center;
+  flex-shrink: 0;
+}
+
+.page-image--empty {
+  border: 1px dashed #d9cdb3;
+}
+
+.page-footer {
+  margin-top: auto;
+  color: #7a6f5c;
+  text-align: center;
+}
+
+.book-page-title {
+  font-family: var(--font-book-title);
+  font-size: 2rem;
+  font-weight: 600;
+  width: fit-content;
+  margin: 0 0 0.8rem;
+  color: var(--font-book-text-color);
+  letter-spacing: 0.08em;
+}
+
+.book-page-title::after {
+  content: '';
+  display: block;
+  width: 50%;
+  height: 3px;
+  margin: -0.5rem 1.5rem 0;
+  background: linear-gradient(90deg, transparent, var(--accent-color), transparent);
+}
+
+.center {
+  text-align: center;
+}
+
+.book-page-title.center {
+  margin-inline: auto;
+}
+
+.skill-bar {
+  margin-bottom: 0.1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.skill-bar-label {
+  display: inline-block;
+  width: 3.6rem;
+  min-width: 3.6rem;
+  text-align: left;
+  margin-right: 0.2rem;
+  white-space: nowrap;
+  min-width: 0.5rem;
+}
+
+.skill-bar-value {
+  font-weight: 600;
+  white-space: nowrap;
+  min-width: 3.5ch;
+  text-align: left;
+}
+
+.skill-bar-track {
+  width: 100%;
+  height: 0.65rem;
+  background-color: #efe6d0;
+  border: 1.5px solid #4a3a1c;
+  border-radius: 3px;
+  overflow: hidden;
+  filter: url(#sketchy-edge);
+  flex: 1;
+  margin: 0 0.5rem;
+}
+
+.skill-bar:nth-child(odd) .skill-bar-track {
+  transform: rotate(-0.4deg);
+}
+
+.skill-bar:nth-child(even) .skill-bar-track {
+  transform: rotate(0.35deg);
+}
+
+.skill-bar-fill {
+  height: 100%;
+  background-color: var(--accent-color);
+  background-image: repeating-linear-gradient(
+    -45deg,
+    rgba(74, 58, 28, 0.5) 0,
+    rgba(74, 58, 28, 0.5) 2px,
+    transparent 2px,
+    transparent 6px
+  );
+  border-right: 1.5px solid #4a3a1c;
+}
+
+.page-loading,
+.page-error {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 8rem;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.page-loading p,
+.page-error p {
+  font-family: var(--font-book-text);
+  font-size: 1rem;
+  color: #4a4030;
+  margin: 0;
+}
+
+.page-error p {
+  color: #8b3a3a;
+}

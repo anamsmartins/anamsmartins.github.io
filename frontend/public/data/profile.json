@@ -1,0 +1,39 @@
+{
+  "name": "Ana Martins",
+  "title": "Software Engineer",
+  "photoUrl": "/assets/profile.jpg",
+  "cvPhotoUrl": "/assets/book/cv.png",
+  "cvDownloadUrl": "/assets/Ana_Martins_CV_Software_Engineer.pdf",
+  "cvDownloadLabel": "Download CV",
+  "paragraph": "I'm a software engineer drawn to meaningful projects. I work with **Java** and **React**, adapt across technologies, and enjoy crafting thoughtful, distinctive products.",
+  "socialLinks": [
+    {
+      "id": "github",
+      "url": "https://github.com/anamsmartins",
+      "iconUrl": "/assets/book/social-coin-github.png",
+      "label": "GitHub"
+    },
+    {
+      "id": "linkedin",
+      "url": "https://www.linkedin.com/in/anamsmartins",
+      "iconUrl": "/assets/book/social-coin-linkedin.png",
+      "label": "LinkedIn"
+    },
+    {
+      "id": "gmail",
+      "url": "mailto:ana.martins@example.com",
+      "iconUrl": "/assets/book/social-coin-gmail.png",
+      "label": "Send Message"
+    }
+  ],
+  "spokenLanguages": [
+    { "name": "English", "level": "C1" },
+    { "name": "Portuguese", "level": "Native" }
+  ],
+  "interests": [
+    { "name": "Travelling", "iconUrl": "/assets/book/interests-travelling.png" },
+    { "name": "Drawing", "iconUrl": "/assets/book/interests-drawing.png" },
+    { "name": "Puzzles", "iconUrl": "/assets/book/interests-puzzles.png" },
+    { "name": "Music", "iconUrl": "/assets/book/interests-music.png" }
+  ]
+}

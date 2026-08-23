@@ -1,0 +1,16 @@
+[
+  {
+    "role": "Part-time Software Engineer",
+    "company": "Generation Impact Global",
+    "period": "2024 - 2025",
+    "iconUrl": "/assets/book/experience-icon-gig.png",
+    "description": "Designed database schemas, developed backend integrations and automation and contributed to full-stack development by building frontend features, automated test suites, and cloud-based development environments."
+  },
+  {
+    "role": "Undergraduate Research Assistant",
+    "company": "Computer Science & Communications Research Centre (CIIC)",
+    "period": "2023",
+    "iconUrl": "/assets/book/experience-icon-ciic.png",
+    "description": "Conducted literature review on emotion-aware music recommendation systems and developed an AI-powered prototype that provides personalized music suggestions to help users reach target emotional states."
+  }
+]

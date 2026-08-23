@@ -1,0 +1,59 @@
+{
+  "technical": [
+    {
+      "group": "Programming",
+      "skills": ["Java", "Python", "PHP", "C#", "Go", "Javascript", "Typescript"]
+    },
+    {
+      "group": "Frameworks",
+      "subgroups": [
+        {
+          "group": "Backend",
+          "skills": ["Spring Boot", "Laravel", "Express"]
+        },
+        {
+          "group": "Frontend",
+          "skills": ["React", "Vue.js", "Nuxt.js"]
+        }
+      ]
+    },
+    {
+      "group": "Mobile",
+      "subgroups": [
+        {
+          "group": "Android",
+          "skills": ["Kotlin", "Java"]
+        },
+        {
+          "group": "iOS",
+          "skills": ["Swift", "SwiftUI", "UIKit"]
+        }
+      ]
+    },
+    {
+      "group": "Database",
+      "skills": ["MySQL", "PostgreSQL", "MongoDB"]
+    },
+    {
+      "group": "Cloud",
+      "skills": ["Docker", "Kubernetes", "GCP", "Terraform", "Laravel Sail"]
+    },
+    {
+      "group": "Others",
+      "skills": [
+        "Inversion of Control (IoC)",
+        "Agentic Development",
+        "MCP",
+        "MVVM"
+      ]
+    }
+  ],
+  "professional": [
+    { "name": "Teamwork", "iconUrl": "/assets/book/skill-teamwork.svg" },
+    { "name": "Motivation", "iconUrl": "/assets/book/skill-motivation.svg" },
+    { "name": "Problem Solving", "iconUrl": "/assets/book/skill-problem-solving.svg" },
+    { "name": "Communication", "iconUrl": "/assets/book/skill-communication.svg" },
+    { "name": "Adaptability", "iconUrl": "/assets/book/skill-adaptability.svg" },
+    { "name": "Tenacity", "iconUrl": "/assets/book/skill-tenacity.svg" }
+  ]
+}

@@ -1,0 +1,21 @@
+:root {
+  --professional-accent-color: #2f4f7a;
+  --professional-accent-color-light: #d4e0ee;
+  --fantasy-accent-color: #884c34;
+  --fantasy-accent-color-light: #ba907f4b;
+}
+
+:root,
+[data-theme='fantasy'] {
+  --accent-color: var(--fantasy-accent-color);
+  --accent-color-light: var(--fantasy-accent-color-light);
+  --accent-color-border: #663a26;
+  --accent-color-hover: #995c44;
+}
+
+[data-theme='professional'] {
+  --accent-color: var(--professional-accent-color);
+  --accent-color-light: var(--professional-accent-color-light);
+  --accent-color-border: #1e3558;
+  --accent-color-hover: #3d6399;
+}

@@ -1,0 +1,4 @@
+html[data-theme='fantasy'] {
+  background-color: #f4efe4;
+  scrollbar-gutter: stable;
+}
